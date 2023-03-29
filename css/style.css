@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  height: 8px;
+  margin: 5px 0px 60px 0px;
+}
+
+.box-sm {
+  height: 8px;
+  margin: 0;
+  flex-grow: 1;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+.box-sm:hover {
+  flex-grow: 12;
+}
+
+.container,
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  background: #b2b2b2;
+  height: 100%;
+  margin: 20px;
+  padding: 20px;
+  outline: 2px solid #fafbfc;
+  outline-offset: -5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2),
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+  margin-bottom: 50px;
+}
+
+.post h2,
+p {
+  text-align: center;
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+.post h2 {
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0px 1px 1px black;
+}
+
+.red {
+  background-color: #ff5852;
+}
+
+.orange {
+  background-color: #ff9000;
+}
+
+.yellow {
+  background-color: #ffd300;
+}
+
+.green {
+  background-color: #3dcd49;
+}
+
+.blue {
+  background-color: #0089d7;
+}
+
+.purple {
+  background-color: #9e44c4;
+}
+
+section {
+  margin: 0 auto;
+  display: block;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.card {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #000;
+  vertical-align: top;
+  max-height: 100%;
+}
+
+.card img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card details {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+  background: white;
+}
+
+.card details summary {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.card details p {
+  padding: 0 10px;
+  color: #000;
+}
+
+.card details blockquote {
+  color: #777;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 20px;
+    height: 200px;
+  }
+  .post h2 {
+    font-size: 36px;
+  }
+  .card {
+    display: block;
+    margin: 20px 10px;
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+  .card details {
+    width: 100%;
+  }
+  .card details summary {
+    font-size: 16px;
+  }
+  .card details p {
+    font-size: 14px;
+  }
+}
